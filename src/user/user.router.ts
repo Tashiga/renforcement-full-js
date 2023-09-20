@@ -20,6 +20,16 @@ export class UserRouter {
             }
         });
 
+        // this.router.get('/all', (req, res, next) => {
+        //     try {
+        //         console.log("2.");
+        //         const result = this.userController.getusers();
+        //         res.status(200).json(result);
+        //     } catch (error: unknown) {
+        //         next(error);
+        //     }
+        // });
+
         this.router.post('/add-user', (req, res, next) => {
             try {
                 const result = this.userController.add(req.body.username);

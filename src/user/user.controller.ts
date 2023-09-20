@@ -8,6 +8,7 @@ export class UserController {
         // is the username empty ?
         // is the username whitespaced ?
         // other checks...
+        console.log("Hello");
         return this.userService.add(username);
     }
 
@@ -15,6 +16,12 @@ export class UserController {
         // is the id a decimal ?
         // is the id a negative number ?
         // other checks...
+        console.log("bye");
         return this.userService.getById(id);
     }
+
+    // getusers(): User[] {
+    //     console.log("hi");
+    //     return this.userService.getUsers();
+    // }
 }
